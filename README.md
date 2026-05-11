@@ -1,2 +1,2 @@
 # Interactive-Solar-System-map
-test
+Written with three.js. Done for as part of capstone.

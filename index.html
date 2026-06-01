@@ -169,9 +169,34 @@
             pointer-events: none; /* User can't accidentally highlight it */
             user-select: none;
         }
+
+        #launch-btn {
+    /* Base setup to match media controls */
+    background-color: rgba(30, 30, 30, 0.8); /* Dark gray translucent background */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-family: 'monospace', sans-serif; 
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    
+    /* Smooth transition for the hover effects */
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#launch-btn:hover {
+    border-color: #00d4ff;           /* Border turns corporate blue */
+    color: #00d4ff;                  /* Text turns corporate blue */
+    background-color: rgba(0, 40, 60, 0.4); /* Subtle deep blue background shift */
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.4); /* Optional: clean navigation glow */
+}
     </style>
 </head>
 <body>
+        <button id="launch-btn" style="display:none; position: absolute; bottom: 200px; left: 50%; transform: translateX(-50%); padding: 10px 20px;">LAUNCH</button>
+
     <div class="controls-hint">
     </div>
     <div class="controls-hint2">
